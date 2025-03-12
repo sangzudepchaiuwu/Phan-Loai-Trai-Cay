@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân loại hoa quả</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        h1 { color: #4CAF50; }
+        img { width: 60%; border: 2px solid #ddd; margin-top: 10px; }
+        table { width: 60%; margin: auto; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+    </style>
+    <script>
+        function updateHistory() {
+            fetch('/history')
+            .then(response => response.json())
+            .then(data => {
+                let tableBody = document.getElementById("historyTable");
+                tableBody.innerHTML = ""; // Xóa dữ liệu cũ
+                data.reverse().forEach(item => {
+                    let row = `<tr><td>${item.time}</td><td>${item.fruit}</td></tr>`;
+                    tableBody.innerHTML += row;
+                });
+            });
+        }
+        setInterval(updateHistory, 2000);  // Cập nhật lịch sử mỗi 2 giây
+    </script>
+</head>
+<body>
+    <h1>Hệ thống phân loại hoa quả</h1>
+    <img src="{{ url_for('video_feed') }}" alt="Camera Feed">
+    
+    <h2>Lịch sử quét</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Thời gian</th>
+                <th>Loại quả</th>
+            </tr>
+        </thead>
+        <tbody id="historyTable">
+        </tbody>
+    </table>
+</body>
+</html>
