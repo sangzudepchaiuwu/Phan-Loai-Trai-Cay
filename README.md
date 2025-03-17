@@ -108,7 +108,7 @@ Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cầ
 
 ## 📰 Poster
 <p align="center">
-  <img src="images/POSTER_NHOM2.pptx" alt="System Architecture" width="800"/>
+  <img src="images/b94cdba5a0ef7d9573080a176875ea36-0.png" alt="System Architecture" width="800"/>
 </p>
 
 ## 🤝 Đóng góp
