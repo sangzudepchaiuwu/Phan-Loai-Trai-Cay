@@ -101,9 +101,13 @@ Cài đặt các thư viện bằng lệnh:
 
 Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cần thiết bằng pip.
 
-3 Chạy các chương trình
+3 Huấn luyện mô hình
+Chạy code trong train_model.py để huấn luyện mô hình từ dataset để xuất ra file train
 
-Để đảm bảo hệ thống hoạt động đúng cách, bạn cần khởi chạy `chuongTrinh.py` trước, thay vì chạy từng file con riêng lẻ. File này cung cấp giao diện chính và bao gồm logic kết nối với Arduino board. Nếu chạy trực tiếp các file con, việc kết nối với Arduino sẽ không hoạt động.
+4 Chạy các chương trình
+Chạy Server.py đẻ hiển thị màn hình livestream camera để hiển thị phân loại
+
+
 
 
 ## 📰 Poster
