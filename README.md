@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1952ae16-91d6-4428-93dd-2f430201fde2)<h1 align="center">PHÂN LOẠI HOA QUẢ</h1>
+<h1 align="center">PHÂN LOẠI HOA QUẢ</h1>
 
 <div align="center">
 
@@ -30,7 +30,7 @@ HỆ THỐNG PHÂN LOẠI HOA QUẢ SỬ DỤNG ESP32CAM VÀ BĂNG CHUYỀN
 ---
 ## 🏗️ HỆ THỐNG!
 <p align="center">
-[Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/1952ae16-91d6-4428-93dd-2f430201fde2)
 </p>
 
 
