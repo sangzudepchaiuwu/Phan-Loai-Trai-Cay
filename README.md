@@ -13,7 +13,7 @@
 
 </div>
 
-<h2 align="center">PHÂN LỌAi HOA QUẢ</h2>
+<h2 align="center">PHÂN LOẠI HOA QUẢ</h2>
 
 <p align="left">
 HỆ THỐNG PHÂN LOẠI HOA QUẢ SỬ DỤNG ESP32CAM VÀ BĂNG CHUYỀN
@@ -86,7 +86,7 @@ BĂNG CHUYỀN
 ### 📦 Các thư viện Python cần thiết
 Cài đặt các thư viện bằng lệnh:
 
-    pip install ultralytics #Tải yolov8
+    pip install ultralytics 
     pip install opencv-python
 
 ## 🚀 Hướng dẫn cài đặt và chạy
@@ -108,7 +108,7 @@ Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cầ
 
 ## 📰 Poster
 <p align="center">
-  <img src="images/POSTER_NHOM2.png" alt="System Architecture" width="800"/>
+  <img src="images/POSTER_NHOM2.pptx" alt="System Architecture" width="800"/>
 </p>
 
 ## 🤝 Đóng góp
