@@ -30,7 +30,7 @@ HỆ THỐNG PHÂN LOẠI HOA QUẢ SỬ DỤNG ESP32CAM VÀ BĂNG CHUYỀN
 ---
 ## 🏗️ HỆ THỐNG!
 <p align="center">
-![image](https://github.com/user-attachments/assets/1952ae16-91d6-4428-93dd-2f430201fde2)
+  <img src="images/structure.png" alt="System Architecture" width="800"/>
 </p>
 
 
@@ -39,16 +39,19 @@ HỆ THỐNG PHÂN LOẠI HOA QUẢ SỬ DỤNG ESP32CAM VÀ BĂNG CHUYỀN
 ## 📂 Cấu trúc dự án
 
 📦 Project  
-├── 📂 AttendanceDB  # Thư mục chứa cơ sở dữ liệu MongoDB backup  
-├── 📂 ThongBao  
-│   ├── ThongBao.ino  # Mã nguồn Arduino điều khiển LED (xanh/đỏ) và còi  
+├── 📂 Dataset 
+├── 📂 runs   
+│   ├── 📂 detect
+        ├── 📂 train
+            ├── 📂 weights
 ├── 📂 templates  
-│   ├── checkin_success.html  # Giao diện HTML thông báo điểm danh thành công  
-├── chuongTrinh.py  # Chương trình chính khởi động LED service, Tkinter UI  
-├── Diemdanh.py  # Giao diện quản lý lịch sử điểm danh, xuất CSV, kết nối MongoDB  
-├── TaoQR.py  # Tạo mã QR, gửi email, quản lý sinh viên, Flask server xử lý điểm danh  
+│   ├── web_dashboard 
+├── server.py  
+├── test1.py 
+├── tét.py
+├── train_model.py
+├── yolov8s.py
 
----
 
 
 
@@ -58,9 +61,9 @@ HỆ THỐNG PHÂN LOẠI HOA QUẢ SỬ DỤNG ESP32CAM VÀ BĂNG CHUYỀN
 
 ### 📡 Phần cứng
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/)
-[![LED](https://img.shields.io/badge/LED-green?style=for-the-badge)]()
-[![Buzzer](https://img.shields.io/badge/Buzzer-red?style=for-the-badge)]()
-[![WiFi](https://img.shields.io/badge/WiFi-2.4GHz-orange?style=for-the-badge)]()
+[![Esp32cam](https://www.google.com/imgres?q=esp32%20cam&imgurl=https%3A%2F%2Fcircuitpython.org%2Fassets%2Fimages%2Fboards%2Flarge%2Fai-thinker-esp32-cam.jpg&imgrefurl=https%3A%2F%2Fcircuitpython.org%2Fboard%2Fai-thinker-esp32-cam%2F&docid=syQLFj7WZSXiwM&tbnid=Ps_CRkW3KNOQ7M&vet=12ahUKEwiX8p3i_JCMAxVB4DQHHZqkHEMQM3oECFsQAA..i&w=800&h=600&hcb=2&ved=2ahUKEwiX8p3i_JCMAxVB4DQHHZqkHEMQM3oECFsQAA)]()
+[![Esp8266]([https://img.shields.io/badge/Buzzer-red?style=for-the-badge)](https://www.google.com/imgres?q=esp8266&imgurl=http%3A%2F%2Fbizweb.dktcdn.net%2Fthumb%2Fgrande%2F100%2F005%2F602%2Fproducts%2Fdien-tu-360-95c67cad-4300-4262-8e90-9024e938804d.jpg%3Fv%3D1500977760473&imgrefurl=https%3A%2F%2Fdientu360.com%2Fnodemcu-lua-wifi-esp8266&docid=g0-kEx5U8jbKPM&tbnid=LwgE0vq5lXhFGM&vet=12ahUKEwiEgfWD_ZCMAxV42TQHHezjLvEQM3oECGUQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwiEgfWD_ZCMAxV42TQHHezjLvEQM3oECGUQAA)]()
+[![Băng chuyền](https://www.google.com/imgres?q=bang%20chuyen%20mini&imgurl=https%3A%2F%2Fhaanhtech.com%2Fwp-content%2Fuploads%2F2024%2F03%2Fbang-tai-mini-3.jpg&imgrefurl=https%3A%2F%2Fhaanhtech.com%2Fsan-pham%2Fbang-tai-mini%2F&docid=gq5DnXKxpRcXlM&tbnid=BeMor4GNQrHvcM&vet=12ahUKEwiCr9Cc_ZCMAxVPr1YBHafSBE0QM3oECFoQAA..i&w=800&h=550&hcb=2&ved=2ahUKEwiCr9Cc_ZCMAxVPr1YBHafSBE0QM3oECFoQAA)]()
 
 ### 🖥️ Phần mềm
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)]()
